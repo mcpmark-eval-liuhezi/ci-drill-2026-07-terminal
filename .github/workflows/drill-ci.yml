@@ -1,0 +1,13 @@
+name: Drill CI
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  drill-ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deliberate failure
+        run: exit 1
